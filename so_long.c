@@ -6,7 +6,7 @@
 /*   By: albrusso <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 15:22:51 by pcrispol          #+#    #+#             */
-/*   Updated: 2023/06/04 00:55:38 by albrusso         ###   ########.fr       */
+/*   Updated: 2023/06/04 01:28:39 by albrusso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -353,7 +353,7 @@ void	find_pos(t_game *all)
 
 void	init_img(t_game *all)
 {
-	all->img.knight = mlx_xpm_file_to_image(al->mlx, "./img/knight.xpm",
+	all->img.knight = mlx_xpm_file_to_image(all->mlx, "./img/knight.xpm",
 			&all->img.width, &all->img.height);
 	all->img.background = mlx_xpm_file_to_image(all->mlx, "./img/ground.xpm",
 			&all->img.width, &all->img.height);

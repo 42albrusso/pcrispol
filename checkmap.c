@@ -6,7 +6,7 @@
 /*   By: albrusso <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 16:21:27 by pcrispol          #+#    #+#             */
-/*   Updated: 2023/06/04 00:50:14 by albrusso         ###   ########.fr       */
+/*   Updated: 2023/06/04 01:28:54 by albrusso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,7 +109,7 @@ void	fillmap_utils(t_game *all, int fd, int i)
 		{
 			all->map[i][j] = '\0';
 			free(str);
-			break ;
+			return ;
 		}
 		all->map[i][j] = str[0];
 		free(str);
